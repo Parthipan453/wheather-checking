@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Weather.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+
+</head>
+<body>
+    <div class="nav-con">
+        <div class="nav-bar">
+            <img src="Weather images/weather.png" width="50px" height="50px">
+            <h2>Hi Cloudy</h2>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                        <a href="">Map</a>
+                        <a href="">News</a>
+                        <a href="">Contact</a>
+                        <button>Get App</button>
+                    </li>
+                </ul>
+            </div>
+        <!---nav end---->
+        </div>
+        <!----nav-bar end---->
+    </div>
+    <!--nav-con end-->
+
+    <div class="container">
+        <div class="interface">
+            <h1>Difference Kind of Weather</h1>
+            <h1>Inside of 24/7 hours.</h1>
+            <div class="news">
+                <p>
+                    You too often some very human cultural artifactslead the 
+                </p>
+                <p>business down the certain routes</p>
+            </div>
+            <!---news ends-->
+            <div class="search-box">
+                <span class="material-symbols-outlined">search</span>
+                <input type="text" id="place" placeholder="Search City,place" >
+                <button onclick="Weather(document.querySelector('place').value)">Get Update</button>
+            </div>
+
+            <p>Best to know your city.</p>
+        </div>
+        <!---interface end-->
+        <div class="info">
+            <div class="header">
+                <h1>Today Weather report</h1>
+            </div>
+            <!---header end-->
+
+            <div class="report">
+                <img src="Weather images/weather.png" id="icon" width="200px" height="200px">
+                <span id="Description"></span>
+            </div>
+            <!---report end--->
+
+            <div class="output">
+                <div class="digit">
+                    <h1 id="deg">0&deg;C</h1>
+                    <span id="min">0&deg;C</span>
+                    <span id="max">/ 0&deg;C</span>
+                </div>
+                <!---digit end--->
+
+                <div class="list-info">
+                    <h3 id="wind">0 mph</h3>
+                    <h3 id="humidity">0 %</h3>
+
+                </div>
+                <!---list end--->
+
+                <div class="converter">
+                    <span id="celcius" onclick="con('celcius')">&deg;C</span>
+                    <span id="fahrenheit" onclick="con('fahrenheit')">| &deg;F</span>
+                </div>
+
+            </div>
+            <!---output end-->
+        </div>
+        <!---info end-->
+    </div>
+    <!--container end-->
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+*{
+    padding : 0%;
+    margin : 0%;
+    box-sizing : border-box;
+}
+
+body{
+    font-family : sans-serif;
+    background-color : rgb(11, 11, 57);
+    color  : aliceblue;
+}
+
+.nav-bar{
+    display : flex;
+}
+
+.nav-bar img{
+    margin : 30px 0 0 50px;
+    cursor : pointer;
+}
+
+.nav-bar h2{
+    margin : 40px 0 0 5px;
+    cursor : pointer;
+    font-family : Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav{
+    margin : 40px 0 0 40px;
+    list-style : none;
+    margin-right : 50px;
+    padding : 0 0 0 36%;
+}
+
+.nav ul li {
+    list-style-type : none;
+}
+
+.nav ul li a{
+    text-decoration : none;
+    font-size : 20px;
+    color : aliceblue;
+    padding : 14px 16px;
+}
+
+.nav ul li a:hover{
+    color: #0000b7;
+    font-size: 25px;
+}
+
+.nav ul li button{
+    position: fixed;
+    padding : 5px 30px;
+    border : none;
+    outline : none;
+    border-radius : 6px;
+    font-size : 16px;
+    background-color : aqua;
+    color : black;
+    font-weight : 900px;
+    box-shadow : 1px 1px 2px #000;
+    cursor : pointer;
+}
+
+.nav ul li button:hover{
+    background-color: blue;
+    border: #14094e;
+
+}
+
+.container{
+    display : flex;
+    justify-content : space-around;
+    margin-top : 6%;
+}
+
+.interface h1{
+    font-weight : normal;
+    letter-spacing : 2px;
+    word-spacing : 3px;
+    font-size : 35px;
+}
+
+.news{
+    margin : 50px 0 50px 0;
+}
+
+.interface p{
+    margin-top: 20px;
+    letter-spacing : 2px;
+    font-size : 20px;
+}
+
+
+.interface .search-box{
+    height: 50px;
+    width: 400px;
+    border  : none;
+    outline : none;
+    border-radius : 5px 5px 5px 5px;
+    letter-spacing : 1px;
+    background-color :#0000b7;
+    cursor : pointer;
+    align-items: center;
+    display: flex;
+    gap: 10px
+
+}
+.interface .search-box input{
+    outline: none;
+    border: none;
+    height: 40px;
+    background-color :#0000b7;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.interface button{
+    border : none;
+    outline : none;  
+    border-radius: 6px;
+    background-color: darkolivegreen;
+    height: 40px;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600px;
+}
+
+.interface button:hover{
+   background-image: linear-gradient(to top, rgb(52, 70, 1),rgb(252, 252, 13));
+   color: #000;
+   font-weight: 600px;
+
+}
+
+.material-symbols-outlined{
+    margin-left: 10px;
+}
+
+.info{
+    width: 380px;
+    height: 400px;
+    background-color: #0000b7;
+    border: none;
+    border-radius: 10px;
+    overflow:auto;
+    position: relative;
+}
+
+.info .header{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+
+.header{
+    background-color: #14094e;
+    height: 65px;
+}
+
+.header h3{
+    text-indent: 20px;
+}
+
+.header h3::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 20%;
+    margin-left: -25px;
+    background-image: url('Weather images/9103048.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.info .report{
+    display: flex;
+    justify-content: center;
+}
+
+.info .report img{
+    margin-top: 20px;
+}
+
+.info .output{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6%;
+}
+
+.info .output .digit h1{
+    padding-bottom: 20px;
+}
+
+.info .output .digit #min{
+    padding-bottom: 20px;
+}
+
+.info .output .list-info #wind{
+    padding-bottom: 20px;
+}
+
+
+#Description{
+    font-size: 20px;
+    text-transform: capitalize;
+    position: relative;
+    top: -50px;
+    text-shadow: 1px 1px 2px black;
+}
+
+#wind::before{
+    content: '';
+    position: absolute;
+    margin-left: -25px;
+    left: 125px;
+    bottom: 100px;
+    background-image: url('Weather images/wind.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+#humidity::before{
+    content: '';
+    position: absolute;
+    left: 110px;
+    background-image: url('Weather images/hot.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+@media(max-width:768px){
+    container{
+        
+    }
+}
